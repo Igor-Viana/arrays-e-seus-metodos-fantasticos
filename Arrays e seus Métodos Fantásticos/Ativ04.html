@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machado de Assis</title>
+</head>
+<body>
+    <script>
+        //separar cada conjunto com suas obras em ordem cronológica
+        var romances = [" Ressurreição (1872)", " A mão e a luva (1874)", " Helena (1876)", " Iaiá Garcia (1878)", " Memórias Póstumas de Brás Cubas (1881)", " Casa Velha (1885)", " Dom Casmurro (1899)", " Esaú e Jacó (1904)", " Memorial de Aires (1908)"];
+        var poesias = [" Crisálidas (1864)", " Falenas (1870)", " Americanas (1875)", " Ocidentais (1880)", " Poesias Completas (1901)"];
+        var contos = [" Contos Fluminenses (1870)", " Histórias da Meia-Noite (1873)", " Papéis Avulsos (1882)", " Histórias sem Data (1884)", " Várias Histórias (1896)", " Páginas Recolhidas (1899)"];
+
+        //separar os 3 primeiros valores dos arrays
+        var romancesreduzido = romances.slice(0, 3);
+        var poesiasreduzido = poesias.slice(0, 3);
+        var contosreduzidos = contos.slice(0, 3);
+
+        //concatenar todos os 3 primeiros
+        var conjFinal = romancesreduzido.concat(poesiasreduzido, contosreduzidos);
+
+        //display final
+        alert("O conjunto com as 3 primeiras obras (Ordem cronológica) dos três grupos é: " + conjFinal);
+
+    </script>
+</body>
+</html>

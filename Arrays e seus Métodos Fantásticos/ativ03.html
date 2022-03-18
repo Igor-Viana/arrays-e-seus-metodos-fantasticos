@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Aventura de Drofo e Topper</title>
+</head>
+<body>
+    <script>
+        var inventarioDrofo = ["anel da invisibilidade", " par de botas mágicas", " par de botas mágicas", " poção do sono", " poção da inocência", " poção da inocência"];
+        var inventarioTopper = ["capa da invisibilidade", " pedra do despertar", " varinha das varinhas", " oção da inocência", " poção da mentira", " poção da mentira", " poção anti-inteligência"];
+
+        //Topper consumiu uma poção da mentira
+        inventarioTopper[4] = "";
+        //Topper perdeu sua pedra
+        inventarioTopper[1] = "";
+        //Topper ganhou um par de botas mágicas de Drofo
+        inventarioDrofo[1] = "";
+        inventarioTopper.push(" par de botas mágicas");
+        //Achou escudo mágico e espada mágica
+        inventarioTopper.push(" Escudo mágico");
+        inventarioTopper.push(" Espada mágica");
+        
+        //Drofo ganhou mais uma bota mágica
+        inventarioDrofo.push(" par de botas mágicas");
+        //usou sua poção do sono
+        inventarioDrofo[3] = "";
+        //consumiu poção anti-inteligência do Topper
+        inventarioTopper[6] = "";
+        //encontrou ovo de dragão e coxinha
+        inventarioDrofo.push(" Ovo de Dragão", " oxinha SUPREMA");
+
+        //Exiba resultado final dos arrays
+        document.write("no final os inventários ficaram: <br>" + "Inventário do Drofo: " + inventarioDrofo + "<br>Inventário do Topper: " + inventarioTopper);
+    </script>
+</body>
+</html>
